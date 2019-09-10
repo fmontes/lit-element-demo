@@ -1,0 +1,14 @@
+{
+  "name": "lit-element-demo",
+  "version": "1.0.0",
+  "description": "Checking out LitElement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@fmontes",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  }
+}
