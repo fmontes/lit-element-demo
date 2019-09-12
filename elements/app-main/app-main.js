@@ -1,26 +1,15 @@
 // Import the LitElement base class and html helper function
 import { LitElement, html } from 'lit-element';
+import '../library/app-button/app-button';
 
 // Extend the LitElement base class
-class AppForm extends LitElement {
-    /**
-     * Implement `render` to define a template for your element.
-     *
-     * You must provide an implementation of `render` for any element
-     * that uses LitElement as a base class.
-     */
+class AppMain extends LitElement {
     render() {
-        /**
-         * `render` must return a lit-html `TemplateResult`.
-         *
-         * To create a `TemplateResult`, tag a JavaScript template literal
-         * with the `html` helper function:
-         */
         return html`
             <!-- template content -->
-            <p>Hello World</p>
+            <app-button>Click Me</app-button>
         `;
     }
 }
 // Register the new element with the browser.
-customElements.define('app-main', AppForm);
+customElements.define('app-main', AppMain);

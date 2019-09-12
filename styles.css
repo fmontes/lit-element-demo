@@ -1,0 +1,20 @@
+:root {
+    --color-primary: #49beb7;
+    --color-secondary: #ff8a5c;
+    --color-neutral: #666;
+    --color-text: #444;
+    --color-negative: #FFF;
+
+    --space: 8px;
+    --space-2x: 16px;
+    --radius: 4px;
+
+    --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-size: 16px;
+
+    --transition-speed: 200ms;
+}
+
+html, body {
+    font-family: var(--font-family);
+}
