@@ -4,7 +4,7 @@ import embedCSS from 'rollup-plugin-embed-css';
 import minify from 'rollup-plugin-babel-minify';
 
 export default {
-    input: ['elements/index.js'],
+    input: ['src/index.js'],
     output: {
         dir: 'build',
         format: 'esm',
