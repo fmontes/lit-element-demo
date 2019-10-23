@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-wc';
+  data = {
+    label: 'Show me',
+    action: () => alert('Hello from Angular')
+  };
+
+  title: string;
+
+  handleInput({ originalTarget: { value } }) {
+    this.title = value;
+  }
 }
