@@ -8,7 +8,14 @@ class AppMain extends LitElement {
     render() {
         return html`
             <!-- template content -->
-            <app-button>Click Me</app-button>
+            <app-button
+                .data="${{
+                    label: 'Hey you! click me',
+                    action: e => {
+                        alert('Thank you!');
+                    }
+                }}"
+            />
             <app-textfield type="email" placeholder="Hola Mundo"></app-textfield>
         `;
     }
