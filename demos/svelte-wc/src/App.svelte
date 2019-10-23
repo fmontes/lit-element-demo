@@ -1,11 +1,32 @@
 <script>
-	export let name;
+  export let title;
+
+  function inputHandler({ originalTarget: { value } }) {
+    title = value;
+  }
 </script>
 
 <style>
-	h1 {
-		color: purple;
-	}
+  :global(html),
+  :global(body) {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .wcs {
+    text-align: center;
+  }
 </style>
 
-<h1>Hello {name}!</h1>
+<img src="svelte-logo-vertical.svg" alt="Svelte Demo" />
+<div class="wcs">
+  <h3>{title || 'Will show when you type'}</h3>
+  <app-textfield placeholder="Type something" on:input={inputHandler} />
+  <app-button
+    data={{ label: 'Show me', action: () => alert('Hello from Svelte') }} />
+</div>
