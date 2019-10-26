@@ -25,3 +25,7 @@ Inside the folder `/demos` we have each project:
 4. `vue-wc: [VueJS](https://vuejs.org/)
 
 Inside each folder you'll find the readme with more instructions.
+
+## Other links
+
+1. Web Components npm package: https://www.npmjs.com/package/lit-element-demo
