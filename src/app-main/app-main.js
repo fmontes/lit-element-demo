@@ -15,7 +15,7 @@ class AppMain extends LitElement {
                         alert('Thank you!');
                     }
                 }}"
-            />
+            ></app-button>
             <app-textfield type="email" placeholder="Hola Mundo"></app-textfield>
         `;
     }

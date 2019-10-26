@@ -13,7 +13,7 @@ export class AppComponent {
 
   title: string;
 
-  handleInput({ originalTarget: { value } }) {
+  handleInput({ target: { value } }) {
     this.title = value;
   }
 }

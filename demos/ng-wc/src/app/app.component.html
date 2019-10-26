@@ -6,6 +6,6 @@
 
 <div class="wcs">
   <h3>{{ title || 'Will show when you type' }}</h3>
-  <app-textfield (input)="handleInput($event)" placeholder="Type something"></app-textfield>
+  <app-textfield (change)="handleInput($event)" placeholder="Type something"></app-textfield>
   <app-button [data]="data"></app-button>
 </div>

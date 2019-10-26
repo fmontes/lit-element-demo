@@ -17,7 +17,9 @@ function App() {
                     <h3>{title || 'Will show when you type'}</h3>
                     <Textfield
                         placeholder="Type something"
-                        onInput={({ originalTarget: { value } }) => setTitle(value)}
+                        onChange={({ target }) => {
+                            setTitle(target.value);
+                        }}
                     />
                     <Button
                         data={{

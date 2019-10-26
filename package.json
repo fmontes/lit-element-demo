@@ -1,6 +1,6 @@
 {
     "name": "lit-element-demo",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Checking out LitElement",
     "main": "build/index.js",
     "files": [

@@ -6,7 +6,8 @@ class AppTextField extends LitElement {
     static get properties() {
         return {
             type: { type: String },
-            placeholder: { type: String }
+            placeholder: { type: String },
+            value: { type: String }
         };
     }
 
@@ -35,10 +36,15 @@ class AppTextField extends LitElement {
         this.placeholder = '';
     }
 
+    handleInput({ target: { value } }) {
+        this.value = value;
+        this.dispatchEvent(new Event('change'));
+    }
+
     render() {
         return html`
             <!-- template content -->
-            <input type=${this.type} .placeholder=${this.placeholder} />
+            <input type=${this.type} @input="${this.handleInput}" .placeholder=${this.placeholder} />
         `;
     }
 }

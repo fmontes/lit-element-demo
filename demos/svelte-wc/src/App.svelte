@@ -1,7 +1,7 @@
 <script>
   export let title;
 
-  function inputHandler({ originalTarget: { value } }) {
+  function changeHandler({ target: { value } }) {
     title = value;
   }
 </script>
@@ -26,7 +26,7 @@
 <img src="svelte-logo-vertical.svg" alt="Svelte Demo" />
 <div class="wcs">
   <h3>{title || 'Will show when you type'}</h3>
-  <app-textfield placeholder="Type something" on:input={inputHandler} />
+  <app-textfield placeholder="Type something" on:change={changeHandler} />
   <app-button
     data={{ label: 'Show me', action: () => alert('Hello from Svelte') }} />
 </div>
