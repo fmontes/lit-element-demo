@@ -5840,7 +5840,7 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lit-element-demo@0.0.3:
+lit-element-demo@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/lit-element-demo/-/lit-element-demo-0.0.3.tgz#1aca0cf03a7d7796568dde2eb0cf444baa91ca9c"
   integrity sha512-APxsHs8rJssAD6xYxKWgrF8UsH0bIQIF1mNq6TL9Ulw4DDJJbpC7R/nGa+evzXmlBvWrEgGQUOHzENAPZHzTOg==
